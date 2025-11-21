@@ -92,6 +92,7 @@ class AttendanceQueueProcessor:
                     print(f"{response.content}")
 
                 except Exception as e:
+                    self.task_queue.put(attendance_data)
                     print(f"Error processing task: {e}")
 
                 finally:
