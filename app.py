@@ -48,6 +48,7 @@ def handle_data():
         if len(parts) >= 2:
             # Get scanning number (index 0)
             scanning_no = parts[0]
+            action_type: int = int(parts[3])
 
             # Get date and time (index 1 and 2)
             log_date_str = f"{parts[1]} {parts[2]}"

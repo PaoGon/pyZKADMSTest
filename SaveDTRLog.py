@@ -1,13 +1,13 @@
 from datetime import datetime
 
 class SaveDTRLog:
-    def __init__(self, ouid: int, scanning_no: str, log_date: datetime) -> None:
+    def __init__(self, ouid: int, scanning_no: str, log_date: datetime, action_type: int) -> None:
         self.DTRFileId: int = 0
         self.ItemNo: int = 0
         self.ScanningNo = scanning_no
         self.LogDate =  log_date
         self.DeviceId: str = ''
-        self.ActionTypeId: int = 0
+        self.ActionTypeId: int = action_type
         self.Value5: int = 0
         self.Value6: int = 0
         self.OUID: int = ouid
